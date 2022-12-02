@@ -19,12 +19,4 @@
 <p><b>colorAlTocar:</b> Va generando un nuevo patrón con los colores que vas tocando, y los compara con el patrón que se había mostrado previamente</p>
 
 <h2 id="jugar">¡Quiero Jugarlo!</h2>
-<p>Ya podés jugarlo, entrá a <a src="https://tremendosimondice.netlify.app/"></a></p>
-
-
-
-
-
-
-
-
+<p>Ya podés jugarlo, entrá a: https://tremendosimondice.netlify.app/</p>
