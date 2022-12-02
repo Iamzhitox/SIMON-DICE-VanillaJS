@@ -1,0 +1,130 @@
+html {
+    margin: 0;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-teclas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .3rem;
+    width: 20rem;
+}
+
+.tecla {
+    filter: brightness(80%);
+    cursor: pointer;
+    width: 10rem;
+    height: 10rem;
+    /* background-color: gray; */
+}
+.tecla:active {
+    filter: brightness(100%);
+}
+
+.tecla-activa {
+    filter: brightness(100%);
+    cursor: pointer;
+    width: 10rem;
+    height: 10rem;
+}
+
+.verde {
+    border-radius: 100% 0 0 0;
+    background: radial-gradient(rgb(0, 226, 0), green);
+}
+.amarillo {
+    border-radius: 0 100% 0 0;
+    background: radial-gradient(rgb(255, 255, 124), rgb(255, 208, 0));
+}
+.azul {
+    border-radius: 0 0 100% 0;
+    background: radial-gradient(rgb(74, 74, 255), rgb(0, 0, 214));
+}
+.rojo {
+    border-radius: 0 0 0 100%;
+    background: radial-gradient(rgb(255, 84, 84), rgb(245, 0, 0));
+}
+
+
+.modal-container {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(1rem);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.modal {
+    z-index: 2;
+    padding: 2rem 2rem 1.3rem 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    backdrop-filter: blur(1rem);
+}
+.modal h1 {
+    margin: 0 0 1.3rem 0;
+    padding: 0;
+}
+.modal button {
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid gray;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: .5rem 4rem;
+    margin: 0;
+    font-weight: bold;
+    font-size: .9rem
+}
+.modal button:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+.modal button:active {
+    background-color: rgba(255, 255, 255, .7);
+}
+.modal p {
+    font-size: 1rem;
+    margin: .5rem;
+}
+
+.nivel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nivel h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(221, 221, 221);
+}
+
+#try-again {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid gray;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: .8rem 2rem;
+    margin: 0;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+
